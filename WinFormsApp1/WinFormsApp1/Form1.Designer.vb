@@ -30,7 +30,15 @@ Partial Class Form1
         Me.DrivetrainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.YearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TonToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.F1 = New System.Windows.Forms.TextBox()
+        Me.F2 = New System.Windows.Forms.TextBox()
+        Me.F3 = New System.Windows.Forms.TextBox()
+        Me.F4 = New System.Windows.Forms.TextBox()
+        Me.F5 = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -86,17 +94,72 @@ Partial Class Form1
         Me.TonToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.TonToolStripMenuItem.Text = "1/4 Ton"
         '
+        'F1
+        '
+        Me.F1.Location = New System.Drawing.Point(34, 66)
+        Me.F1.Name = "F1"
+        Me.F1.Size = New System.Drawing.Size(125, 27)
+        Me.F1.TabIndex = 1
+        '
+        'F2
+        '
+        Me.F2.Location = New System.Drawing.Point(34, 131)
+        Me.F2.Name = "F2"
+        Me.F2.Size = New System.Drawing.Size(125, 27)
+        Me.F2.TabIndex = 2
+        '
+        'F3
+        '
+        Me.F3.Location = New System.Drawing.Point(34, 206)
+        Me.F3.Name = "F3"
+        Me.F3.Size = New System.Drawing.Size(125, 27)
+        Me.F3.TabIndex = 3
+        '
+        'F4
+        '
+        Me.F4.Location = New System.Drawing.Point(34, 284)
+        Me.F4.Name = "F4"
+        Me.F4.Size = New System.Drawing.Size(125, 27)
+        Me.F4.TabIndex = 4
+        '
+        'F5
+        '
+        Me.F5.Location = New System.Drawing.Point(34, 360)
+        Me.F5.Name = "F5"
+        Me.F5.Size = New System.Drawing.Size(125, 27)
+        Me.F5.TabIndex = 5
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Location = New System.Drawing.Point(280, 66)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(477, 321)
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.F5)
+        Me.Controls.Add(Me.F4)
+        Me.Controls.Add(Me.F3)
+        Me.Controls.Add(Me.F2)
+        Me.Controls.Add(Me.F1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -110,4 +173,11 @@ Partial Class Form1
     Friend WithEvents DrivetrainToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents YearToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TonToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents F1 As TextBox
+    Friend WithEvents F2 As TextBox
+    Friend WithEvents F3 As TextBox
+    Friend WithEvents F4 As TextBox
+    Friend WithEvents F5 As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
